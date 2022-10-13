@@ -1,0 +1,10 @@
+﻿using System;
+namespace VirtualOverride;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        
+    }
+}
