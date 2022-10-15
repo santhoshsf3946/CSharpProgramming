@@ -25,7 +25,7 @@ namespace Question3
 
         public string Branch { get; set; }
 
-        public List<Attendance> AttendanceList = new List<Attendance>();
+        public List<Attendance> AttendanceList { get; set; }
 
         public EmployeeInfo(string name, string fatherName, Gender gender, long mobile, DateTime dOB, string branch, double salaryOfTheMonth, string month) : base(salaryOfTheMonth, month)
         {
@@ -36,13 +36,14 @@ namespace Question3
             Mobile = mobile;
             DOB = dOB;
             Branch = branch;
+            AttendanceList = new List<Attendance>();
         }
 
         public void ShowInfo()
         {
-            Console.WriteLine($"\n  Name: {Name}\n  Father Name: {FatherName}\n  Gender: {Gender}\n  Mobile Number: {Mobile}\n  Date of Birth: {DOB.ToShortDateString()}\n  Branch Name: {Branch}\n  Salary of the Mont: {SalaryOfTheMonth}\n  Month: {Month}\n  Attendance List: ");
+            Console.WriteLine($"\n  Name: {Name}\n  Father Name: {FatherName}\n  Gender: {Gender}\n  Mobile Number: {Mobile}\n  Date of Birth: {DOB.ToShortDateString()}\n  Branch Name: {Branch}\n  Salary of the Mont: {SalaryOfTheMonth}\n  Month: {Month}\n\n  Attendance List: ");
 
-            Console.WriteLine("\t  Date\t\tNumber of days worked\n\t  ----\t\t---------------------");
+            Console.WriteLine("\t  Date\t\tNumber of hours worked\n\t  ----\t\t---------------------");
 
             foreach (var attendance in AttendanceList)
             {

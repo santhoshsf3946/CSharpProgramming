@@ -2,7 +2,7 @@ using System;
 
 namespace Question1
 {
-    public class PrincipalInfo : Personalnfo
+    public class PrincipalInfo : PersonalInfo
     {
         public string PricipalID { get; set; }
 

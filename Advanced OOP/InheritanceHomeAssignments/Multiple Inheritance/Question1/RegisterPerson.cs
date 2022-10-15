@@ -2,7 +2,7 @@ using System;
 
 namespace Question1
 {
-    public class RegisterPerson : Personalnfo, FamilyInfo, IShowData
+    public class RegisterPerson : PersonalInfo, FamilyInfo, IShowData
     {
         private static int s_registrationNumber = 1000;
 

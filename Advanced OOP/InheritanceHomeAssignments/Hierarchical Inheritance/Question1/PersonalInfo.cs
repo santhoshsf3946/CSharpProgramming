@@ -3,9 +3,9 @@ using System;
 namespace Question1
 {
     public enum Gender { Default, Male, Female, Others }
-    public class Personalnfo
+    public class PersonalInfo
     {
-        public Personalnfo(string name, string fatherName, DateTime dOB, long phone, Gender gender, string mail) 
+        public PersonalInfo(string name, string fatherName, DateTime dOB, long phone, Gender gender, string mail) 
         {
             Name = name;
             FatherName = fatherName;

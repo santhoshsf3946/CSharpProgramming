@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Question1
 {
-    public class TheoryExamMarks : Personalnfo
+    public class TheoryExamMarks : PersonalInfo
     {
         public double[] Sem1 { get; set; }
         public double[] Sem2 { get; set; }

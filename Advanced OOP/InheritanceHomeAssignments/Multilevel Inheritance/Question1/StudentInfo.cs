@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Question1
 {
-    public class StudentInfo : Personalnfo
+    public class StudentInfo : PersonalInfo
     {
         public long RegisterNumber { get; set; }
 

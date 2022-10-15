@@ -3,7 +3,7 @@ using System;
 namespace Question1
 {
     public enum MaritalStatus { Default, Married, Single }
-    public class Personalnfo : IShowData
+    public class PersonalInfo : IShowData
     {
         public string Name { get; set; }
 
@@ -15,7 +15,7 @@ namespace Question1
 
         public MaritalStatus MaritalStatus { get; set; }
 
-        public Personalnfo(string name, MaritalStatus maritalStatus, DateTime dOB, long phone, string mail) 
+        public PersonalInfo(string name, MaritalStatus maritalStatus, DateTime dOB, long phone, string mail) 
         {
             Name = name;
             Phone = phone;
